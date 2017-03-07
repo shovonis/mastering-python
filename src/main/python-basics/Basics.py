@@ -28,10 +28,10 @@ theIteratorInpython = "Iterator"
 
 print(theIteratorInpython[1:5])
 
-# # a simple fibonocci
+# a simple fibonocci
 # a, b = 0, 1
 # while b < 10:
-#     print(b)
+#     print(a)
 #     a, b = b, a+b
 
 
@@ -55,3 +55,38 @@ print(theIteratorInpython[1:5])
 # Enumuration
 seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 print(list(enumerate(seasons)))
+
+
+def fibonocci(n):
+    """This is a fibinocci funtion which
+    prints the fibonocci series"""
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a + b  # This kind of assignment operator works simultaneously
+
+
+fibonocci(2000)
+print(fibonocci.__doc__)
+
+# Default value only evaluated once for Mutable Objects
+# def f(a, L=[]):
+#     L.append(a)
+#     return L
+#
+# print(f(1))
+# print(f(2))
+# print(f(3))
+#
+#
+#
+# # TO ignore default we can bypass it with None for Mutable Objects
+# def f(a, L=None):
+#     if L is None:   #bypassing for None value
+#         L = []
+#     L.append(a)
+#     return L
+#
+# print(f(1))
+# print(f(2))
+# print(f(3))
