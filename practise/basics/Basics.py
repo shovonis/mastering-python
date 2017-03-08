@@ -1,7 +1,11 @@
+import practise.basics.Fibonocci
+
 _author_ = "Rifatul Islam"
 
 a = 2
 b = 3
+
+print(practise.basics.Fibonocci.fib(100))
 
 print("Use of ** operator (exponent): ", b ** a)
 print("Use of // operator(divide without reminder): ", b // a)
@@ -54,22 +58,22 @@ print(theIteratorInpython[1:5])
 
 # Enumuration
 seasons = ['Spring', 'Summer', 'Fall', 'Winter']
-print(list(enumerate(seasons)))
-
-
-def fibonocci(n):
-    """This is a fibinocci funtion which
-    prints the fibonocci series"""
-    a, b = 0, 1
-    while a < n:
-        print(a, end=' ')
-        a, b = b, a + b  # This kind of assignment operator works simultaneously
-
-
-fibonocci(2000)
-print(fibonocci.__doc__)
-
-# Default value only evaluated once for Mutable Objects
+# print(list(enumerate(seasons)))
+#
+#
+# def fibonocci(n):
+#     """This is a fibinocci funtion which
+#     prints the fibonocci series"""
+#     a, b = 0, 1
+#     while a < n:
+#         print(a, end=' ')
+#         a, b = b, a + b  # This kind of assignment operator works simultaneously
+#
+#
+# fibonocci(2000)
+# print(fibonocci.__doc__)
+#
+# # Default value only evaluated once for Mutable Objects
 # def f(a, L=[]):
 #     L.append(a)
 #     return L
@@ -90,3 +94,6 @@ print(fibonocci.__doc__)
 # print(f(1))
 # print(f(2))
 # print(f(3))
+
+
+

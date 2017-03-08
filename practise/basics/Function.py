@@ -1,6 +1,7 @@
 _author_ = "Rifatul Islam"
 
 
+
 def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
     print("-- This parrot wouldn't", action, end=' ')
     print("if you put", voltage, "volts through it.")
