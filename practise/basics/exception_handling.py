@@ -12,11 +12,14 @@
 class B(Exception):
     pass
 
+
 class C(B):
     pass
 
+
 class D(C):
     pass
+
 
 for cls in [D, C, B]:
     try:
@@ -27,6 +30,7 @@ for cls in [D, C, B]:
         print("C")
     except B:
         print("B")
+
 
 # try:
 #     raise NameError("Salut, Je'mapplle Rifatul")
@@ -39,6 +43,7 @@ for cls in [D, C, B]:
 class Error(Exception):
     pass
 
+
 class CustomValidatorException(Error):
     """Exception raised for errors in the input.
 
@@ -49,18 +54,35 @@ class CustomValidatorException(Error):
         self.message = message
         self.expression = expression
 
+
 class MathError(Error, ZeroDivisionError):
     """
     This exception is raised when we devide something with the number 0
     """
+
     def __int__(self, divident, message="Devide by zero Error"):
         self.divident = divident
-        self.message=message
-
+        self.message = message
 
 
 try:
-    raise MathError
+    raise MathError("This is a test error")
 
 except MathError as msg:
-    print("Opps!!, Something went wrong: ".format(msg))
+    print("Opps, this is a error",  msg)
+    # print(msg)
+
+
+def devide(x, y):
+    try:
+        result = x / y
+
+    except ZeroDivisionError as zr:
+        print(zr)
+    else:
+        print("Reslt is : ", result)
+    finally:
+        print("Function is excecuted")
+
+
+devide(2, 0)
