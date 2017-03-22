@@ -2,4 +2,3 @@ This is a test file
 
 THIS IS A TEST FILE
 This is another line
-["apple", "orange", "apple", "pear", "orange", "banana"]["apple", "orange", "apple", "pear", "orange", "banana"]["apple", "orange", "apple", "pear", "orange", "banana"]

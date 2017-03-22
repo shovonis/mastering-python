@@ -54,6 +54,8 @@ class Pet:
     def __str__(self):
         return "Name: ", self.name, "Kind: ", self.pet_kind
 
+
+
 a_cow = Pet("Mooooo I am a cow")
 a_cow.append_kind("COW")
 print("This is a : ", a_cow.__str__())

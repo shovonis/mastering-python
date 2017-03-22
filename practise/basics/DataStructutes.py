@@ -1,5 +1,7 @@
 from collections import deque
 
+
+
 _author_ = "Rifatul Islam"
 
 
@@ -57,6 +59,12 @@ answers = ['lancelot', 'the holy grail', 'blue']
 for q, a in zip(questions, answers):
     print("What is your favorite{0}? Its a {1}.".format(q,a))
 
+from math import pi, sin
+sine_table = [sin(x*pi/180) for x in range(0, 91)]
+print(sine_table)
 
+file = open("../../test.txt", "r+")
+distinct_words = set(word for line in file for word in line.lower().split())
+print(distinct_words)
 
 
