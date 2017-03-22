@@ -1,11 +1,11 @@
-import practise.basics.Fibonocci
+import practise.basics.fibonocci
 
 _author_ = "Rifatul Islam"
 
 a = 2
 b = 3
 
-print(practise.basics.Fibonocci.fib(100))
+print(practise.basics.fibonocci.fib(100))
 
 print("Use of ** operator (exponent): ", b ** a)
 print("Use of // operator(divide without reminder): ", b // a)
