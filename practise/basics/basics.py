@@ -11,7 +11,6 @@ print("Use of ** operator (exponent): ", b ** a)
 print("Use of // operator(divide without reminder): ", b // a)
 print("Use of ^ bitwise mask: ", b ^ a)
 
-
 # In python list can contains different sets of data types.
 aList = ["This is a list", 123, 690.9, ["this is list inside list", 90], "this is outer string"]
 print(aList)
@@ -22,8 +21,7 @@ print(aList)
 aList.extend("Extending aList")
 print(aList)
 
-
-#Tupeles are deinded with () and are not mutable
+# Tupeles are deinded with () and are not mutable
 
 aTuple = ("This is a tuple", 2334, 2344.0, "Another String")
 print(aTuple)
@@ -39,7 +37,7 @@ print(theIteratorInpython[1:5])
 #     a, b = b, a+b
 
 
-#simple if
+# simple if
 # x = int(input("Please enter an integer: "))
 # if (x< 0):
 #     print("Negative Number")
@@ -58,6 +56,8 @@ print(theIteratorInpython[1:5])
 
 # Enumuration
 seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+
+
 # print(list(enumerate(seasons)))
 #
 #

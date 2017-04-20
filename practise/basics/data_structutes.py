@@ -21,6 +21,9 @@ print("Queue: ", queue)
 print(queue.popleft())
 print(queue.popleft())
 
+spam = ['cat', 'bat', 'rat', 'elephant']
+print("Spam: ",spam[0:-1])
+
 # Lambdas and Maps in python
 squres = list(map(lambda x: x ** 2, range(10)))
 print(squres)

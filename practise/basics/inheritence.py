@@ -1,5 +1,6 @@
 _author_ = "Rifatul Islam"
 
+
 class Pet:
     def __init__(self, kind, color):
         self.kind = kind
@@ -8,6 +9,7 @@ class Pet:
 
     def print_pet_details(self):
         pass
+
 
 class Dog(Pet):
     def __init__(self, name, kind, color):
@@ -26,18 +28,19 @@ class Dog(Pet):
 
 
 dog = Dog("Sophie", "DOG", "Black")
-dog._this_is_a_private_method() #this is just a convention, nothing more than that
+dog._this_is_a_private_method()  # this is just a convention, nothing more than that
 
 print(issubclass(Dog, Pet))
 print(isinstance(dog, Dog))
 
+
 class Worker:
     pass
 
+
 empl = Worker()
 empl.name = "Saad"
-empl.job="Testing"
+empl.job = "Testing"
 
 print(empl.name)
 print(empl.job)
-

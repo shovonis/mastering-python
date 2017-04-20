@@ -1,43 +1,4 @@
-# _author_ = "Rifatul Islam"
-#
-# while True:
-#     try:
-#         x = int(input("Please enter a number: "))
-#         break
-#     except ValueError:
-#         print("Oops!  That was no valid number.  Try again...")
-#
-#
-
-class B(Exception):
-    pass
-
-
-class C(B):
-    pass
-
-
-class D(C):
-    pass
-
-
-for cls in [D, C, B]:
-    try:
-        raise cls()
-    except D:
-        print("D")
-    except C:
-        print("C")
-    except B:
-        print("B")
-
-
-# try:
-#     raise NameError("Salut, Je'mapplle Rifatul")
-# except NameError:
-#     print("My Name is Rifatul")
-#     raise
-
+_author_ = "Rifatul Islam"
 
 
 class Error(Exception):
@@ -57,7 +18,7 @@ class CustomValidatorException(Error):
 
 class MathError(Error, ZeroDivisionError):
     """
-    This exception is raised when we devide something with the number 0
+    This exception is raised when we divide something with the number 0
     """
 
     def __int__(self, divident, message="Devide by zero Error"):
@@ -69,11 +30,11 @@ try:
     raise MathError("This is a test error")
 
 except MathError as msg:
-    print("Opps, this is a error",  msg)
+    print("Opps, this is a error", msg)
     # print(msg)
 
 
-def devide(x, y):
+def divide(x, y):
     try:
         result = x / y
 
@@ -85,4 +46,4 @@ def devide(x, y):
         print("Function is excecuted")
 
 
-devide(2, 0)
+divide(2, 0)
